@@ -8,7 +8,7 @@ import React, { Component } from 'react'
  * Rename this class to reflect the component being created
  *
  */
-export default class Login extends Component {
+ class Login extends Component {
 
     /* Step 3
     * Create a state for the component to store view data
@@ -40,6 +40,7 @@ export default class Login extends Component {
     *
     */
     render() {
+        setState="Hello World"
         return (
             <div>
                 {/* Accessing the value of message from the state object */}
