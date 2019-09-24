@@ -15,7 +15,7 @@ export default class HelloWorld extends Component {
     *
     */
     state = {
-        message: ''
+        message: 'Hello Worldsss'
     }
 
     /* Step 4
@@ -25,13 +25,13 @@ export default class HelloWorld extends Component {
     *   setState can be run here as well
     *   -REMINDER remember `setState` it is an async function
     */
-    componentDidMount() {
+    // componentDidMount() {
         // axios.get('/api/helloworld')
         //     .then((res) => {
         //         this.setState({message: res.data})
         //     })
-        console.log("hello world")
-    }
+        // console.log("hello world")
+    // }
 
     /* Step 5
     *  The render function manages what is shown in the browser
