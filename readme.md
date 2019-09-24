@@ -7,6 +7,6 @@ Welcome to iChatBot! iChatBot will help you get those high scores in idle games,
 [**Website Here**](https://dashboard.heroku.com/apps/stark-shore-14188)
 
 WireFrame:
-(./public/wireFrame.jpg)
+![alt text](./public/wireFrame.jpg "Wire Frame")
 ERD
-(./public/erd.jpg)
+![alt text](./public/erd.jpg "ERD") 
