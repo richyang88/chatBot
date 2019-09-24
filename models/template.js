@@ -30,6 +30,25 @@ global.sampleModel = [];
 //  name: String
 //})
 
+const UserSchema = new mongoose.Schema({
+  firstName:{
+    type: String,
+    default: ''
+  },
+  lastName:{
+    type: String,
+    default: ''
+  },
+  email:{
+    type: String,
+    default: ''
+  },
+  password:{
+    type: String,
+    default: ''
+  },
+})
+
 /* Step 3
  *
  * TODO: create collection API
