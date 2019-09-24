@@ -56,15 +56,16 @@ const UserSchema = new mongoose.Schema({
  *
  */
 //const SampleCollection = mongoose.model('Sample', SampleModelSchema)
+const UserCollection = mongoose.model('User', UserSchema)
 
 /* Step 4
  *
  * TODO: delete this it's just a sample
  *
  */
-function getHelloWorldString() {
-  return 'hello world'
-}
+// function getHelloWorldString() {
+//   return 'hello world'
+// }
 
 /* Step 5
  *
@@ -72,5 +73,5 @@ function getHelloWorldString() {
  * object
  */
 module.exports = {
-  getHelloWorldString
+  UserCollection
 }
