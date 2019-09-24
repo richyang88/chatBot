@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
  * This will need to change for every new project you create.
  *
  */
-const connectionString = process.env.MONGODB_URI || "mongodb://localhost/<db-name>";
+const connectionString = process.env.MONGODB_URI || "mongodb://localhost/https://git.heroku.com/stark-shore-14188.git";
 
 
 /* Step 2
@@ -31,7 +31,7 @@ mongoose.connect(connectionString, { useNewUrlParser: true})
  *
  */
 
- 
+
 
 
 module.exports = mongoose
