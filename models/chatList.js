@@ -34,7 +34,7 @@ const ChatListSchema = new mongoose.Schema({
   chatName:{
       type: string
   },
-  passWord:{
+  assWord:{
       type:string
   }
 });
@@ -53,7 +53,7 @@ const ChatListCollection = mongoose.model('ChatList', ChatListSchema)
  * TODO: delete this it's just a sample
  *
  */
-function getAllList() {
+function getAllChats() {
   return ChatListCollection.find()
 }
 
@@ -64,5 +64,5 @@ function getAllList() {
  */
 module.exports = {
     ChatListCollection,
-    getAllList
+    getAllChats
 }

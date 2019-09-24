@@ -30,22 +30,12 @@ global.sampleModel = [];
 //  name: String
 //})
 
-const UserSchema = new mongoose.Schema({
-  firstName:{
-    type: String,
-    default: ''
+const DialogListSchema = new mongoose.Schema({
+  userInput:{
+      type: string
   },
-  lastName:{
-    type: String,
-    default: ''
-  },
-  email:{
-    type: String,
-    default: ''
-  },
-  password:{
-    type: String,
-    default: ''
+  botOutput:{
+      type:string
   }
 });
 
@@ -56,16 +46,20 @@ const UserSchema = new mongoose.Schema({
  *
  */
 //const SampleCollection = mongoose.model('Sample', SampleModelSchema)
-const UserCollection = mongoose.model('User', UserSchema)
+const DialogListCollection = mongoose.model('ChatList', DialogListSchema)
 
 /* Step 4
  *
  * TODO: delete this it's just a sample
  *
  */
-function getAllUserInfo() {
-  return UserCollection.find();
+function getAllDialog() {
+  return DialogListCollection.find()
 }
+
+function getOneDialog(id){
+    return DialogListCollection.findById(id)
+  }
 
 /* Step 5
  *
@@ -73,6 +67,7 @@ function getAllUserInfo() {
  * object
  */
 module.exports = {
-  UserCollection,
-  getAllUserInfo
+    ChatListCollection,
+    getAllDialog,
+    getOneDialog
 }
