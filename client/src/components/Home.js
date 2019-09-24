@@ -15,7 +15,7 @@ export default class Login extends Component {
     *
     */
     state = {
-        message: 'Hello World'
+        message: 'Hello World '
     }
 
     /* Step 4
