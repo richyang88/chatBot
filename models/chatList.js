@@ -46,16 +46,16 @@ const ChatListSchema = new mongoose.Schema({
  *
  */
 //const SampleCollection = mongoose.model('Sample', SampleModelSchema)
-const ChatListCollection = mongoose.model('User', ChatListSchema)
+const ChatListCollection = mongoose.model('ChatList', ChatListSchema)
 
 /* Step 4
  *
  * TODO: delete this it's just a sample
  *
  */
-// function getHelloWorldString() {
-//   return 'hello world'
-// }
+function getAllList() {
+  return ChatListCollection.find()
+}
 
 /* Step 5
  *
@@ -63,5 +63,6 @@ const ChatListCollection = mongoose.model('User', ChatListSchema)
  * object
  */
 module.exports = {
-    ChatListCollection
+    ChatListCollection,
+    getAllList
 }

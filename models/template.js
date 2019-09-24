@@ -63,9 +63,9 @@ const UserCollection = mongoose.model('User', UserSchema)
  * TODO: delete this it's just a sample
  *
  */
-// function getHelloWorldString() {
-//   return 'hello world'
-// }
+function getUserInfo() {
+  return UserCollection.find();
+}
 
 /* Step 5
  *
@@ -73,5 +73,6 @@ const UserCollection = mongoose.model('User', UserSchema)
  * object
  */
 module.exports = {
-  UserCollection
+  UserCollection,
+  getUserInfo
 }
