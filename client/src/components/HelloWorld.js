@@ -1,41 +1,50 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
-import ReviewReact from "./components/reviewFolder/reviewReact"
-import ActivityReact from "./components/activityFolder/activityReact"
-import UserReact from "./components/userFolder/userReact"
-import Container from '@material-ui/core/Container';
-import './App.css';
-export default function App() {
-  return (
-    <div>
-      <Router>
-        {/* <Switch> */}
-        {/* <Link to="/">Home</Link> */}
-        <Link to="/activities">Activity</Link>
-        <Route exact path="/" render={
-          () => {
-            return (
-              <div>
-                <h1>Lone Wolf</h1>
-                <Container fixed >
-                <h1 className="homePage zeus">
-                      <Link to="/zeus">Zeus</Link>
-                    </h1>
-                    </Container>
-                    <Container fixed >
-                    <h1 className="homePage hades" >
-                        <Link to="/hades">Hades</Link>
-                    </h1>
-                </Container>
-              </div>
-            );
-          }
-        } />
-        <Route exact path="/reviews" component={ReviewReact} />
-        <Route exact path="/activities" component={ActivityReact} />
-        <Route exact path="/activities/:activity_id/users" component={UserReact} />
-{/* </Switch> */}
-      </Router>
-    </div>
-  )
+/* Step 1 import React, { Component } and axios
+ *
+ */
+import React, { Component } from 'react'
+// import axios from 'axios'
+
+/* Step 2
+ * Rename this class to reflect the component being created
+ *
+ */
+export default class Login extends Component {
+
+    /* Step 3
+    * Create a state for the component to store view data
+    *
+    */
+    state = {
+        message: 'Hello to Your World'
+    }
+
+    /* Step 4
+    * Use componentDidMount to retrieve any data to display
+    *   Here you can make calls to your local express server
+    *   or to an external API
+    *   setState can be run here as well
+    *   -REMINDER remember `setState` it is an async function
+    */
+    // componentDidMount() {
+        // axios.get('/api/helloworld')
+        //     .then((res) => {
+        //         this.setState({message: res.data})
+        //     })
+        // console.log("hello world")
+    // }
+
+    /* Step 5
+    *  The render function manages what is shown in the browser
+    *  TODO: delete the jsx returned
+    *   and replace it with your own custom jsx template
+    *
+    */
+    render() {
+        return (
+            <div>
+                {/* Accessing the value of message from the state object */}
+                <h1>{this.state.message}</h1>
+            </div>
+        )
+    }
 }
