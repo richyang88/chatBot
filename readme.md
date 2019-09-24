@@ -1,31 +1,12 @@
-# mern-template-project
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Setup A New Project From This Template
+## iChatBot
 
-If you are starting a new project do the following:
+Welcome to iChatBot! iChatBot will help you get those high scores in idle games, keep track of your game accounts and passwords securely, but most importantly it will talk to anyone who messages you! Now you can relax at work knowing that you are getting all your gaming points and your account wont get banned because iChatBot will do all the talking for you!
 
-1. copy/download this directory to where you new project is located and rename
-   it to the name of your project.
-1. change your directory (`cd`) into the copied project template
-1. `npm install`
-1. `npm run dev`
-1. Open a new browser window and navigate to the URL http://localhost:3000/
-    here you should see `hello world` displayed after page load
-    updates should show up here automatically
-1. see the `client/src` `readme.md` file for more information on the react project
+[**Website Here**](https://dashboard.heroku.com/apps/stark-shore-14188)
 
-# Setup A New Project Without This Template
-
-If you want to start a project without using this template directory do the
-following:
-
-
-1. `mkdir <project-name>`
-1. `cd <project-name>`
-1. `echo "# <project-name>" > readme.md`
-1. `git init`
-1. `git add readme.md `
-1. `git commit -m "init repo with readme.md"`
-1. `npm init`
-1. `mkdir models views controllers`
-1. `touch ./server.js`
+WireFrame:
+(./public/wireFrame.jpg)
+ERD
+(./public/erd.jpg)
