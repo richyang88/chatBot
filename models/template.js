@@ -46,8 +46,8 @@ const UserSchema = new mongoose.Schema({
   password:{
     type: String,
     default: ''
-  },
-})
+  }
+});
 
 /* Step 3
  *
