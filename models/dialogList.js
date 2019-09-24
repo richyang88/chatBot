@@ -46,7 +46,7 @@ const DialogListSchema = new mongoose.Schema({
  *
  */
 //const SampleCollection = mongoose.model('Sample', SampleModelSchema)
-const DialogListCollection = mongoose.model('ChatList', DialogListSchema)
+const DialogListCollection = mongoose.model('Dialogist', DialogListSchema)
 
 /* Step 4
  *
@@ -67,7 +67,7 @@ function getOneDialog(id){
  * object
  */
 module.exports = {
-    ChatListCollection,
+    // ChatListCollection,
     getAllDialog,
     getOneDialog
 }

@@ -63,6 +63,6 @@ function getAllChats() {
  * object
  */
 module.exports = {
-    ChatListCollection,
+    // ChatListCollection,
     getAllChats
 }

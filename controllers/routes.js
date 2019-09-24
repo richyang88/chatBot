@@ -39,7 +39,7 @@ const templateRouter = express.Router()
  * TODO: delete this handler; it's just a sample
  */ 
 templateRouter.get('/', (req, res) => {
-  res.json(templateApi.getHelloWorldString())
+  res.json(templateApi.getAllUserInfo())
 })
 
 /* Step 6

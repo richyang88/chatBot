@@ -73,6 +73,6 @@ function getAllUserInfo() {
  * object
  */
 module.exports = {
-  UserCollection,
+  // UserCollection,
   getAllUserInfo
 }
